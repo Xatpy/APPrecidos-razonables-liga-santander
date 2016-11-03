@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>APP-recidos razonables liga Santander 16/17</title>
+	<link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<h1>APP-recidos razonables liga Santander 16/17</h1>
+	<form>
+	  <h4>Dirección web (URL) de la foto a comparar:</h4>
+	  <input type="url" name="photoURL" value="http://ep01.epimg.net/deportes/imagenes/2016/08/28/actualidad/1472413232_722531_1472414050_miniatura_normal.jpg" id="photoURL" onblur=onblurInput()>
+	  <br>
+	</form>
+	<button>ENVIAR</button>
+	<h3 id="errorMessage" style="visibility:hidden"></h3>
+
+	<h1>Imagen a comparar</h1>
+	<div id="compareImg">
+		<img id="imgCompare" ></img>
+	</div>
+
+	<div id="resultsTitle" style="visibility:hidden">
+		<h2>Resultados</h2>
+	</div>
+
+	<div id="resultsDiv" style="visibility:hidden">		
+		<div id="result0">
+			<img id="resultPhoto0"></img>
+			<h3 id="resultName0"></h3>
+			<h4 id="confidence0"></h4>
+		</div>
+		<div id="result1">
+			<img id="resultPhoto1"></img>
+			<h3 id="resultName1"></h3>
+			<h4 id="confidence1"></h4>
+		</div>
+		<div id="result2">
+			<img id="resultPhoto2"></img>
+			<h3 id="resultName2"></h3>
+			<h4 id="confidence2"></h4>
+		</div>
+	</div>
+
+	<div id="loading">
+		<br><br>
+		<h2>Cargando...</h2>
+		<img id="loading-image"alt="Loading..." class="swing" style="max-width:150px; margin-left: -50px"/>
+	</div>
+
+	<footer></footer>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="app.js"></script>
+</body>
+</html>
