@@ -9,7 +9,14 @@
 	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-	<h1>APP-recidos razonables liga Santander 16/17</h1>
+	<header>APP-recidos razonables · Liga Santander 16/17</header>
+	<div id="container">
+		<div id="divDescription">
+			<h4>Descripción</h4>
+		</div>
+	</div>
+	
+
 	<form>
 	  <h4>Dirección web (URL) de la foto a comparar:</h4>
 	  <input type="url" name="photoURL" value="http://ep01.epimg.net/deportes/imagenes/2016/08/28/actualidad/1472413232_722531_1472414050_miniatura_normal.jpg" id="photoURL" onblur=onblurInput()>
@@ -18,7 +25,7 @@
 	<button>ENVIAR</button>
 	<h3 id="errorMessage" style="visibility:hidden"></h3>
 
-	<h1>Imagen a comparar</h1>
+	<h2>Imagen a comparar</h2>
 	<div id="compareImg">
 		<img id="imgCompare" ></img>
 	</div>

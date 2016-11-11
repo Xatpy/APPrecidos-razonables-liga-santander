@@ -1,18 +1,34 @@
 body {
 	font-family: 'Cabin', sans-serif;
 	text-align: center;
-	background-color: #d8d8d8;
+	background-color: #D3D0CB;
 }
+
+/*
 body > div {
-	display: flex;
-	/*flex-wrap: wrap;*/
 	width: 100%;
     align-items: center;
 	justify-content: center;
+    display: flex;
 }
 body > div > div {
 	width: 33%;
 	height: 100px;
+}*/
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    margin: 0px 0 0 0;
+    background-color: #393E41;
+    color: #EAEAEA;
+    font-size: 5vh;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* align vertical */
 }
 
 img {
@@ -32,7 +48,7 @@ input, select {
 
 button {
     width: 7.5%;
-    background-color: #4CAF50;
+    background-color: #E2C044;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -42,7 +58,7 @@ button {
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #E4C555;
 }
 
 #resultsDiv {
@@ -63,6 +79,19 @@ button:hover {
 
 #errorMessage {
 	color: red;
+}
+
+#divDescription {
+    position: relative;
+    margin-top: 80px;
+    margin-bottom: -15px;
+    border: 2px solid;
+    border-radius: 25px;
+}
+
+#container {
+    display: flex;
+    width: 75%;
 }
 
 /* Source: http://www.webdesignerdepot.com/2014/05/8-simple-css3-transitions-that-will-wow-your-users/ */
