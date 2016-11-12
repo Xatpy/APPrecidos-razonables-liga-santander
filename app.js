@@ -22,9 +22,14 @@ function onblurInput() {
 	if (checkURLisAnImage(photoURL)) {
 		hideErrorMessage();
 		document.getElementById("preImg").src = photoURL;
+		document.getElementById("preImgDiv").style.display = "block";
+		document.getElementById("errorMessage").style.display = "none";
+		document.getElementById("buttonSend").disabled = false; 
 		//loadImageToCompareImg(document.getElementById("preImg").value);
 	} else {
-		showErrorMessage("Error, insert a valid photo url (accepted formats: .jpg | .jpeg | .png");
+		showErrorMessage("Error, inserta una dirección web (URL) con una foto válida (formatos aceptados .jpg | .jpeg | .png");
+		document.getElementById("preImgDiv").style.display = "none";
+		document.getElementById("buttonSend").disabled = true; 
 	}
 }
 
@@ -55,7 +60,6 @@ $(document).ready(function(){
     	/// Loading....
     	document.getElementById("loading-image").src = photoURL;
     	showLoadingSpinner(true);
-    	debugger
 
         $.ajax(apiURL, {
 		    'data': JSON.stringify(json),
@@ -70,7 +74,7 @@ $(document).ready(function(){
 			    	var urlImg;
 			    	for (var i = 0; i < players.length; ++i) {
 			    		document.getElementById("resultPhoto" + (i)).src = players[i].photoUrl;
-			    		document.getElementById("resultName" + (i)).innerText = players[i].name;
+			    		document.getElementById("resultName" + (i)).innerText = (i+1) + ".- " +players[i].name;
 			    		document.getElementById("confidence" + (i)).innerText = "Parecido (%): " + (players[i].confidence * 100).toFixed(2) + "%";
 			    	}
 			    	// Photo to compare
@@ -82,7 +86,7 @@ $(document).ready(function(){
 					document.getElementById("preImgDiv").style.display = "none";
 
 		    	} else {
-	    			showErrorMessage("Error getting info about faces in the image that you sent. Please, try with another.");
+	    			showErrorMessage("Error obteniendo la cara de la persona conla imagen que probaste. Por favor, intenta con una nueva foto.");
 	    			document.getElementById("resultsDiv").style.visibility = "hidden";
 					document.getElementById("resultsTitle").style.visibility = "hidden";
 		    	}			    	

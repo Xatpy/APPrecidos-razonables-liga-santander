@@ -13,14 +13,22 @@
 	<header>APP-recidos razonables · Liga Santander 16/17</header>
 	<div class="container">
 		<div id="divDescription">
-			<h4>Descripción</h4>
+			<p id="pDescription">
+				<b>APP-recidos razonables</b> es una web app que permite comparar fotografías de personas con los jugadores de fútbol profesional de la Liga Santander 16-17. 
+				Explicación de uso:<br>
+				<ol>
+					<li>Pega la dirección web (URL) de una fotografía con la <b>cara visible de una sola persona</b> en el campo de abajo (*). Formatos permitidos: .JPG, .JPEG, .PNG.</li>
+					<li>Pulsa en el botón "ENVIAR".</li>
+				</ol>
+				Si quieres saber cómo funciona la aplicación, está explicado en este <b>post</b>😀.
+			</p>
 		</div>
 	</div>
 	<div class="container">
 		<form id="formURL">
-			<h4 id="labelURL">Dirección web (URL) de la foto a comparar:</h4>
-			<input type="url" name="photoURL" value="http://ep01.epimg.net/deportes/imagenes/2016/08/28/actualidad/1472413232_722531_1472414050_miniatura_normal.jpg" id="photoURL" onblur=onblurInput()>
-			<button type="button">ENVIAR</button>
+			<h4 id="labelURL">(1) Dirección web (URL) de la foto a comparar:</h4>
+			<input type="url" name="photoURL" value="http://ep01.epimg.net/deportes/imagenes/2016/08/28/actualidad/1472413232_722531_1472414050_miniatura_normal.jpg" id="photoURL" onblur=onblurInput() onclick="this.focus();this.select()">
+			<button type="button" id="buttonSend">(2) ENVIAR</button>
 		</form>
 	</div>
 
@@ -37,7 +45,7 @@
 			<div class="container" id="resultsDiv">
 				<div class="result" id="compareImg">
 					<img id="imgCompare"></img>
-					<h3>Imagen comparada</h3>
+					<h3 id="labelImageCompared">Imagen comparada</h3>
 				</div>
 				<div class="result" id="result0">
 					<img id="resultPhoto0"></img>

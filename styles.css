@@ -51,7 +51,7 @@ button {
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
-    border: none;
+    /*border: none;*/
     border-radius: 4px;
     cursor: pointer;
     height: 50px;
@@ -61,6 +61,10 @@ button {
 
 button:hover {
     background-color: #E4C555;
+}
+
+button:disabled {
+    background-color: #D3D3D3;
 }
 
 
@@ -77,7 +81,13 @@ button:hover {
     border-radius: 25px;
     width: 80%;
     background-color: #769396;
+
+    text-align: justify;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: small;
 }
+
 
 #formURL {
     width: 100%;
@@ -118,6 +128,10 @@ button:hover {
 #resultsDiv {
     padding-top: -20px;
     justify-content: space-around;
+}
+
+#resultsTitle {
+    margin-top: -25px;
 }
 
 .result {
