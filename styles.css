@@ -25,14 +25,14 @@ header {
     background-color: #393E41;
     color: #EAEAEA;
     font-size: 5vh;
-    height: 75px;
+    height: 95px;
     display: flex;
     justify-content: center;
     align-items: center; /* align vertical */
 }
 
 img {
-	max-width:250px; 
+	max-width: 170px; 
 	max-height: 250px;
 }
 
@@ -47,7 +47,6 @@ input, select {
 }
 
 button {
-    width: 7.5%;
     background-color: #E2C044;
     color: white;
     padding: 14px 20px;
@@ -55,14 +54,48 @@ button {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    height: 50px;
+    margin-top: 15px;
+    margin-left: 15px;
 }
 
 button:hover {
     background-color: #E4C555;
 }
 
-#resultsDiv {
-	padding-top: 20px;
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+#divDescription {
+    position: relative;
+    margin-top: 97px;
+    margin-bottom: -15px;
+    border: 2px solid;
+    border-radius: 25px;
+    width: 80%;
+    background-color: #769396;
+}
+
+#formURL {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#labelURL {
+    width: 25%;
+    text-align: right;
+    margin-right: 10px;
+}
+
+#inputURL {
+    width: 60%;
+    height: 50%;
+    margin-top: 18px;
 }
 
 #loading {	position:fixed;
@@ -72,26 +105,32 @@ button:hover {
     height: 18em;
     margin-top: -9em; 
     margin-left: -15em; 
-    border: 1px solid #ccc;
-    background-color: #f3f3f3;
+    border: 5px solid #ccc;
+    background-color: #769396;
 }
+
 #loading-image { position: absolute; top: 40%; left: 45%; z-index: 100} 
 
 #errorMessage {
 	color: red;
 }
 
-#divDescription {
-    position: relative;
-    margin-top: 80px;
-    margin-bottom: -15px;
-    border: 2px solid;
-    border-radius: 25px;
+#resultsDiv {
+    padding-top: -20px;
+    justify-content: space-around;
 }
 
-#container {
-    display: flex;
-    width: 75%;
+.result {
+    border: 2px solid;
+}
+
+#compareImg {
+    border: 1px solid #E2C044;
+}
+
+#imgCompare {
+    margin-top: 35px;
+    margin-bottom: 20px;
 }
 
 /* Source: http://www.webdesignerdepot.com/2014/05/8-simple-css3-transitions-that-will-wow-your-users/ */

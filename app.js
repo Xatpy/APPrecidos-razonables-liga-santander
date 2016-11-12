@@ -21,7 +21,8 @@ function onblurInput() {
 	var photoURL = document.getElementById("photoURL").value;
 	if (checkURLisAnImage(photoURL)) {
 		hideErrorMessage();
-		loadImageToCompareImg(document.getElementById("photoURL").value);
+		document.getElementById("preImg").src = photoURL;
+		//loadImageToCompareImg(document.getElementById("preImg").value);
 	} else {
 		showErrorMessage("Error, insert a valid photo url (accepted formats: .jpg | .jpeg | .png");
 	}
@@ -73,10 +74,13 @@ $(document).ready(function(){
 			    		document.getElementById("confidence" + (i)).innerText = "Parecido (%): " + (players[i].confidence * 100).toFixed(2) + "%";
 			    	}
 			    	// Photo to compare
-					loadImageToCompareImg(photoURL);
+					//loadImageToCompareImg(photoURL);
+					document.getElementById("imgCompare").src = photoURL;
 
 			    	document.getElementById("resultsDiv").style.visibility = "visible";
 					document.getElementById("resultsTitle").style.visibility = "visible";
+					document.getElementById("preImgDiv").style.display = "none";
+
 		    	} else {
 	    			showErrorMessage("Error getting info about faces in the image that you sent. Please, try with another.");
 	    			document.getElementById("resultsDiv").style.visibility = "hidden";
@@ -84,7 +88,10 @@ $(document).ready(function(){
 		    	}			    	
 
     			showLoadingSpinner(false);		    		
-		    }
+		    },
+		    error: function (request, status, error) {
+        		alert(request.responseText);
+    		}
 		});
     });
 });

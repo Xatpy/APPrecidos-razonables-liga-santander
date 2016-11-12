@@ -5,52 +5,59 @@
 	<title>APP-recidos razonables liga Santander 16/17</title>
 	<link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="icon.png" />
 
 	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
 	<header>APP-recidos razonables · Liga Santander 16/17</header>
-	<div id="container">
+	<div class="container">
 		<div id="divDescription">
 			<h4>Descripción</h4>
 		</div>
 	</div>
-	
+	<div class="container">
+		<form id="formURL">
+			<h4 id="labelURL">Dirección web (URL) de la foto a comparar:</h4>
+			<input type="url" name="photoURL" value="http://ep01.epimg.net/deportes/imagenes/2016/08/28/actualidad/1472413232_722531_1472414050_miniatura_normal.jpg" id="photoURL" onblur=onblurInput()>
+			<button type="button">ENVIAR</button>
+		</form>
+	</div>
 
-	<form>
-	  <h4>Dirección web (URL) de la foto a comparar:</h4>
-	  <input type="url" name="photoURL" value="http://ep01.epimg.net/deportes/imagenes/2016/08/28/actualidad/1472413232_722531_1472414050_miniatura_normal.jpg" id="photoURL" onblur=onblurInput()>
-	  <br>
-	</form>
-	<button>ENVIAR</button>
 	<h3 id="errorMessage" style="visibility:hidden"></h3>
 
-	<h2>Imagen a comparar</h2>
-	<div id="compareImg">
-		<img id="imgCompare" ></img>
+	<div id="preImgDiv">
+		<h3>Imagen a comparar</h3>
+		<img id="preImg"></img>
 	</div>
 
-	<div id="resultsTitle" style="visibility:hidden">
-		<h2>Resultados</h2>
+	<div>
+		<div id="resultsTitle" style="visibility:hidden">
+			<h3>Resultados</h3>
+			<div class="container" id="resultsDiv">
+				<div class="result" id="compareImg">
+					<img id="imgCompare"></img>
+					<h3>Imagen comparada</h3>
+				</div>
+				<div class="result" id="result0">
+					<img id="resultPhoto0"></img>
+					<h3 id="resultName0"></h3>
+					<h4 id="confidence0"></h4>
+				</div>
+				<div class="result" id="result1">
+					<img id="resultPhoto1"></img>
+					<h3 id="resultName1"></h3>
+					<h4 id="confidence1"></h4>
+				</div>
+				<div class="result" id="result2">
+					<img id="resultPhoto2"></img>
+					<h3 id="resultName2"></h3>
+					<h4 id="confidence2"></h4>
+				</div>
+			</div>
+		</div>
 	</div>
-
-	<div id="resultsDiv" style="visibility:hidden">		
-		<div id="result0">
-			<img id="resultPhoto0"></img>
-			<h3 id="resultName0"></h3>
-			<h4 id="confidence0"></h4>
-		</div>
-		<div id="result1">
-			<img id="resultPhoto1"></img>
-			<h3 id="resultName1"></h3>
-			<h4 id="confidence1"></h4>
-		</div>
-		<div id="result2">
-			<img id="resultPhoto2"></img>
-			<h3 id="resultName2"></h3>
-			<h4 id="confidence2"></h4>
-		</div>
-	</div>
+	
 
 	<div id="loading">
 		<br><br>
