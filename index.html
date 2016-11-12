@@ -10,7 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-	<header>APP-recidos razonables · Liga Santander 16/17</header>
+	<header>👥 APP-recidos razonables · Liga Santander 16/17 ⚽️</header>
 	<div class="container">
 		<div id="divDescription">
 			<p id="pDescription">
@@ -20,14 +20,14 @@
 					<li>Pega la dirección web (URL) de una fotografía con la <b>cara visible de una sola persona</b> en el campo de abajo (*). Formatos permitidos: .JPG, .JPEG, .PNG.</li>
 					<li>Pulsa en el botón "ENVIAR".</li>
 				</ol>
-				Si quieres saber cómo funciona la aplicación, está explicado en este <b>post</b>😀.
+				Si quieres saber cómo funciona "por dentro" la aplicación, está explicado en este <b><a href="www.jaimechapinal.com/blog" target="_blank">post</a></b> 😀.
 			</p>
 		</div>
 	</div>
 	<div class="container">
 		<form id="formURL">
-			<h4 id="labelURL">(1) Dirección web (URL) de la foto a comparar:</h4>
-			<input type="url" name="photoURL" value="http://ep01.epimg.net/deportes/imagenes/2016/08/28/actualidad/1472413232_722531_1472414050_miniatura_normal.jpg" id="photoURL" onblur=onblurInput() onclick="this.focus();this.select()">
+			<h4 id="labelURL">(1) Dirección web (URL) de la foto con la cara a comparar: (*)</h4>
+			<input id="photoURL" type="url" name="photoURL" value="http://ep01.epimg.net/deportes/imagenes/2016/08/28/actualidad/1472413232_722531_1472414050_miniatura_normal.jpg"  onblur=onblurInput() onclick="this.focus();this.select()">
 			<button type="button" id="buttonSend">(2) ENVIAR</button>
 		</form>
 	</div>
@@ -70,7 +70,7 @@
 	<div id="loading">
 		<br><br>
 		<h2>Cargando...</h2>
-		<img id="loading-image"alt="Loading..." class="swing" style="max-width:150px; margin-left: -50px"/>
+		<img id="loading-image"alt="Loading..." class="swing"/>
 	</div>
 
 	<footer></footer>

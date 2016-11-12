@@ -11,6 +11,7 @@ function loadImageToCompareImg(imageUrl) {
 function showErrorMessage(message) {
 	document.getElementById("errorMessage").style.visibility = "visible";
 	document.getElementById("errorMessage").innerText = message;
+	document.getElementById("errorMessage").style.display = "block";
 }
 
 function hideErrorMessage() {
@@ -25,12 +26,19 @@ function onblurInput() {
 		document.getElementById("preImgDiv").style.display = "block";
 		document.getElementById("errorMessage").style.display = "none";
 		document.getElementById("buttonSend").disabled = false; 
+		inputStyleWithError(false);
 		//loadImageToCompareImg(document.getElementById("preImg").value);
 	} else {
 		showErrorMessage("Error, inserta una dirección web (URL) con una foto válida (formatos aceptados .jpg | .jpeg | .png");
 		document.getElementById("preImgDiv").style.display = "none";
 		document.getElementById("buttonSend").disabled = true; 
+		//hideResults();
+		inputStyleWithError(true);
 	}
+}
+
+function inputStyleWithError(error) {
+	document.getElementById("photoURL").style.border = !error ? "1px solid #ccc" : "1px solid #F00";
 }
 
 function checkURLisAnImage(url) {
@@ -45,6 +53,11 @@ function fillWithPlaceholders() {
 	}
 	// Photo to compare
 	document.getElementById("imgCompare").src = placeholderURL;
+}
+
+function hideResults() {
+	document.getElementById("resultsTitle").style.visibility = "hidden";
+	document.getElementById("resultsDiv").style.visibility = "hidden";
 }
 
 $(document).ready(function(){
@@ -86,9 +99,8 @@ $(document).ready(function(){
 					document.getElementById("preImgDiv").style.display = "none";
 
 		    	} else {
-	    			showErrorMessage("Error obteniendo la cara de la persona conla imagen que probaste. Por favor, intenta con una nueva foto.");
-	    			document.getElementById("resultsDiv").style.visibility = "hidden";
-					document.getElementById("resultsTitle").style.visibility = "hidden";
+	    			showErrorMessage("Error obteniendo la cara de la persona con la imagen data. Por favor, intenta con una nueva foto.");
+					hideResults();
 		    	}			    	
 
     			showLoadingSpinner(false);		    		

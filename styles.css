@@ -88,7 +88,6 @@ button:disabled {
     font-size: small;
 }
 
-
 #formURL {
     width: 100%;
     display: inline-flex;
@@ -97,13 +96,13 @@ button:disabled {
 }
 
 #labelURL {
-    width: 25%;
+    width: 20%;
     text-align: right;
     margin-right: 10px;
 }
 
-#inputURL {
-    width: 60%;
+#photoURL {
+    width: 58%;
     height: 50%;
     margin-top: 18px;
 }
@@ -119,9 +118,18 @@ button:disabled {
     background-color: #769396;
 }
 
-#loading-image { position: absolute; top: 40%; left: 45%; z-index: 100} 
+#loading-image { 
+    position: absolute; 
+    top: 40%; 
+    left: 45%; 
+    z-index: 100;
+    max-width: 150px; 
+    max-height: 150px; 
+    margin-left: -50px;
+} 
 
 #errorMessage {
+    margin-top: 0px;
 	color: red;
 }
 
@@ -131,7 +139,7 @@ button:disabled {
 }
 
 #resultsTitle {
-    margin-top: -25px;
+    margin-top: -18px;
 }
 
 .result {
@@ -145,6 +153,7 @@ button:disabled {
 #imgCompare {
     margin-top: 35px;
     margin-bottom: 20px;
+    max-height: 180px;
 }
 
 /* Source: http://www.webdesignerdepot.com/2014/05/8-simple-css3-transitions-that-will-wow-your-users/ */
@@ -222,3 +231,6 @@ button:disabled {
 	-webkit-animation-iteration-count: 10;
 	animation-iteration-count: 10;
 }
+
+
+
