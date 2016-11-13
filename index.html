@@ -17,10 +17,10 @@
 				<b>APP-recidos razonables</b> es una web app que permite comparar fotografías de personas con los jugadores de fútbol profesional de la Liga Santander 16-17. 
 				Explicación de uso:<br>
 				<ol>
-					<li>Pega la dirección web (URL) de una fotografía con la <b>cara visible de una sola persona</b> en el campo de abajo (*). Formatos permitidos: .JPG, .JPEG, .PNG.</li>
+					<li>Pega la dirección web (URL) de una fotografía con la <b>cara visible de una sola persona</b> en el campo de abajo (*). Por defecto, hay un ejemplo con "el Cholo". Formatos permitidos: .JPG, .JPEG, .PNG.</li>
 					<li>Pulsa en el botón "ENVIAR".</li>
 				</ol>
-				Si quieres saber cómo funciona "por dentro" la aplicación, está explicado en este <b><a href="www.jaimechapinal.com/blog" target="_blank">post</a></b> 😀.
+				Si quieres saber cómo funciona "por dentro" la aplicación, está explicado en este <b><a href="http://www.jaimechapinal.com/blog" target="_blank">post</a></b> 😀.
 			</p>
 		</div>
 	</div>
@@ -35,7 +35,7 @@
 	<h3 id="errorMessage" style="visibility:hidden"></h3>
 
 	<div id="preImgDiv">
-		<h3>Imagen a comparar</h3>
+		<h3>👤 Imagen a comparar 👤</h3>
 		<img id="preImg"></img>
 	</div>
 
@@ -73,10 +73,16 @@
 		<img id="loading-image"alt="Loading..." class="swing"/>
 	</div>
 
-	<footer></footer>
-
-
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="app.js"></script>
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  		ga('create', 'UA-87348572-1', 'auto');
+  		ga('send', 'pageview');
+	</script>
 </body>
 </html>
