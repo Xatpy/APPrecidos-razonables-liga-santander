@@ -60,8 +60,8 @@ button {
     margin: 8px 0;
     border-radius: 4px;
     cursor: pointer;
-    height: 50px;
-    margin-top: 15px;
+    height: 45px;
+    margin-top: 16px;
     margin-left: 15px;
 }
 
@@ -113,6 +113,7 @@ button:disabled {
     width: 20%;
     text-align: right;
     margin-right: 10px;
+    margin-top: 13px;
 }
 
 #photoURL {
