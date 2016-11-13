@@ -4,18 +4,6 @@ body {
 	background-color: #D3D0CB;
 }
 
-/*
-body > div {
-	width: 100%;
-    align-items: center;
-	justify-content: center;
-    display: flex;
-}
-body > div > div {
-	width: 33%;
-	height: 100px;
-}*/
-
 header {
     width: 100%;
     position: fixed;
@@ -25,7 +13,7 @@ header {
     background-color: #393E41;
     color: #EAEAEA;
     font-size: 5vh;
-    height: 95px;
+    height: 75px;
     display: flex;
     justify-content: center;
     align-items: center; /* align vertical */
@@ -141,10 +129,6 @@ button:disabled {
     margin-top: -18px;
 }
 
-.result {
-    border: 2px solid;
-}
-
 #compareImg {
     border: 1px solid #E2C044;
 }
@@ -155,6 +139,14 @@ button:disabled {
     max-height: 180px;
 }
 
+.result {
+    border: 2px solid;
+}
+
+.resultText {
+    margin: 5px;
+}
+
 /****** MEDIA QUERIES ********/
 
 @media only screen 
@@ -163,9 +155,25 @@ button:disabled {
   and (-webkit-min-device-pixel-ratio: 2) { 
 
     header {
-        font-size: 3vh;
+        font-size: 2.5vh;
         height: 70px;
         margin-left: -10px;
+    }
+
+    h3 {
+        font-size: 0.9em;
+        margin: 5px;
+    }
+
+    img {
+        max-width: 150px; 
+        max-height: 210px;
+    }
+
+    button {
+        font-size: xx-small;
+        padding: 5px 5px 5px 5px;
+        height: 30px;
     }
 
     #divDescription {
@@ -173,16 +181,43 @@ button:disabled {
         margin-top: 70px;
     }
 
+    #resultsDiv {
+        margin-top: -10px;
+    }
+
     #labelURL {
         font-size: xx-small;
     }
 
-    button {
-        font-size: xx-small;
-        padding: 7px 10px;
-
+    #resultsDiv {
+        flex-wrap: wrap;
     }
 
+    #errorMessage {
+        margin-bottom: 22px;
+    }
+
+    #photoURL {
+        font-size: xx-small;
+    }
+
+    .result {
+        margin-top: 10px;        
+    }
+
+    .resultText {
+        margin: 0px;
+    }
+}
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 668px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    header {
+        font-size: 3vh;
+    }
 }
 
 /* ------- ANIMATIONS -------- */

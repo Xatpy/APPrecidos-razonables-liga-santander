@@ -81,7 +81,6 @@ $(document).ready(function(){
 		    'contentType': 'application/json',
 		    success: function (data) {
 		    	//alert(data.a);
-		    	debugger
 		    	if (data.errorType === undefined) {
 		    		var players = JSON.parse(data);
 			    	var urlImg;
