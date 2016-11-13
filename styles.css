@@ -62,7 +62,7 @@ button:disabled {
 
 #divDescription {
     position: relative;
-    margin-top: 97px;
+    margin-top: 80px;
     margin-bottom: -15px;
     border: 2px solid;
     border-radius: 25px;
@@ -137,6 +137,21 @@ button:disabled {
     margin-top: 35px;
     margin-bottom: 20px;
     max-height: 180px;
+}
+
+#share {
+    margin-top: 25px;
+    margin-bottom: -35px;
+}
+
+#labelCompartir {
+    padding-top: 5px;
+}
+
+.logo {
+    width: 32px;
+    height: 32px;
+    margin-left: 20px;
 }
 
 .result {

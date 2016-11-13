@@ -5,7 +5,7 @@
 	<title>APP-recidos razonables liga Santander 16/17</title>
 	<link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" type="image/png" href="icon.png" />
+	<link rel="icon" type="image/png" href="images/icon.png" />
 
 	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
@@ -24,6 +24,14 @@
 			</p>
 		</div>
 	</div>
+
+	<div id="share" class="container">
+		<span id="labelCompartir">Compartir:</span>
+		<a href="whatsapp://send?text=https://xatpy.github.io/APPrecidos-razonables-liga-santander/" data-action="share/whatsapp/share"><img border="0" src="images/logoWhatsapp.png" width="64px" height="64px" class="logo"></a>
+		<a href="whatsapp://send?text=https://xatpy.github.io/APPrecidos-razonables-liga-santander/" data-action="share/whatsapp/share"><img border="0" src="images/logoTwitter.png" width="64px" height="64px" class="logo"></a>
+		<a href="whatsapp://send?text=https://xatpy.github.io/APPrecidos-razonables-liga-santander/" data-action="share/whatsapp/share"><img border="0" src="images/logoFacebook.png" width="64px" height="64px" class="logo"></a>
+	</div>
+
 	<div class="container">
 		<form id="formURL">
 			<h4 id="labelURL">(1) Dirección web (URL) de la foto con la cara a comparar: (*)</h4>
@@ -45,7 +53,7 @@
 			<div class="container" id="resultsDiv">
 				<div class="result" id="compareImg">
 					<img id="imgCompare"></img>
-					<h3 id="labelImageCompared">Imagen comparada</h3>
+					<h3 class="resultText" id="labelImageCompared">Imagen comparada</h3>
 				</div>
 				<div class="result" id="result0">
 					<img id="resultPhoto0"></img>
