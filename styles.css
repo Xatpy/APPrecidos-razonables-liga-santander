@@ -3,40 +3,42 @@ body {
 	text-align: center;
 	/*background-color: #D3D0CB;*/
 
-    background: rgba(255,238,219,1);
-    background: -moz-linear-gradient(top, rgba(255,238,219,1) 0%, rgba(235,215,193,1) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,238,219,1)), color-stop(100%, rgba(235,215,193,1)));
-    background: -webkit-linear-gradient(top, rgba(255,238,219,1) 0%, rgba(235,215,193,1) 100%);
-    background: -o-linear-gradient(top, rgba(255,238,219,1) 0%, rgba(235,215,193,1) 100%);
-    background: -ms-linear-gradient(top, rgba(255,238,219,1) 0%, rgba(235,215,193,1) 100%);
-    background: linear-gradient(to bottom, rgba(255,238,219,1) 0%, rgba(235,215,193,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffeedb', endColorstr='#ebd7c1', GradientType=0 );
+background: rgba(251,232,211,1);
+background: -moz-linear-gradient(left, rgba(251,232,211,1) 0%, rgba(227,209,191,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(251,232,211,1)), color-stop(100%, rgba(227,209,191,1)));
+background: -webkit-linear-gradient(left, rgba(251,232,211,1) 0%, rgba(227,209,191,1) 100%);
+background: -o-linear-gradient(left, rgba(251,232,211,1) 0%, rgba(227,209,191,1) 100%);
+background: -ms-linear-gradient(left, rgba(251,232,211,1) 0%, rgba(227,209,191,1) 100%);
+background: linear-gradient(to right, rgba(251,232,211,1) 0%, rgba(227,209,191,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbe8d3', endColorstr='#e3d1bf', GradientType=1 );
 }
 
 header {
     font-family: 'Russo One', sans-serif;
-    
+    border-bottom: 1px solid black;
+    text-shadow: 2px 2px 2px black;
+
     width: 100%;
     position: fixed;
     top: 0;
     z-index: 5;
     margin: 0px 0 0 0;
     color: #EAEAEA;
-    font-size: 5vh;
+    font-size: 4.5vh;
     height: 75px;
     display: flex;
     justify-content: center;
     align-items: center; /* align vertical */
 
     /*background-color: #393E41;*/
-    background: rgba(186,59,70,1);
-    background: -moz-radial-gradient(center, ellipse cover, rgba(186,59,70,1) 0%, rgba(161,47,58,1) 100%);
-    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(186,59,70,1)), color-stop(100%, rgba(161,47,58,1)));
-    background: -webkit-radial-gradient(center, ellipse cover, rgba(186,59,70,1) 0%, rgba(161,47,58,1) 100%);
-    background: -o-radial-gradient(center, ellipse cover, rgba(186,59,70,1) 0%, rgba(161,47,58,1) 100%);
-    background: -ms-radial-gradient(center, ellipse cover, rgba(186,59,70,1) 0%, rgba(161,47,58,1) 100%);
-    background: radial-gradient(ellipse at center, rgba(186,59,70,1) 0%, rgba(161,47,58,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ba3b46', endColorstr='#a12f3a', GradientType=1 );
+    background: rgba(248,95,115,1);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(248,95,115,1) 0%, rgba(204,78,94,1) 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(248,95,115,1)), color-stop(100%, rgba(204,78,94,1)));
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(248,95,115,1) 0%, rgba(204,78,94,1) 100%);
+    background: -o-radial-gradient(center, ellipse cover, rgba(248,95,115,1) 0%, rgba(204,78,94,1) 100%);
+    background: -ms-radial-gradient(center, ellipse cover, rgba(248,95,115,1) 0%, rgba(204,78,94,1) 100%);
+    background: radial-gradient(ellipse at center, rgba(248,95,115,1) 0%, rgba(204,78,94,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85f73', endColorstr='#cc4e5e', GradientType=1 );
 }
 
 img {
@@ -56,7 +58,7 @@ input, select {
 
 button {
     /*background-color: #E2C044;*/
-    background-color: #61C9A8;
+    background-color: #283C63;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -69,7 +71,7 @@ button {
 
 button:hover {
     /*background-color: #E4C555;*/
-    background-color: #61C9B9;
+    background-color: #6495ed;
 }
 
 button:disabled {
@@ -94,14 +96,14 @@ button:disabled {
     font-size: small;
 
     /*background-color: #769396;*/
-    background: rgba(237,155,64,1);
-    background: -moz-radial-gradient(center, ellipse cover, rgba(237,155,64,1) 0%, rgba(222,144,60,1) 100%);
-    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(237,155,64,1)), color-stop(100%, rgba(222,144,60,1)));
-    background: -webkit-radial-gradient(center, ellipse cover, rgba(237,155,64,1) 0%, rgba(222,144,60,1) 100%);
-    background: -o-radial-gradient(center, ellipse cover, rgba(237,155,64,1) 0%, rgba(222,144,60,1) 100%);
-    background: -ms-radial-gradient(center, ellipse cover, rgba(237,155,64,1) 0%, rgba(222,144,60,1) 100%);
-    background: radial-gradient(ellipse at center, rgba(237,155,64,1) 0%, rgba(222,144,60,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ed9b40', endColorstr='#de903c', GradientType=1 );
+    background: rgba(189,183,194,1);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(189,183,194,1) 0%, rgba(146,138,151,1) 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(189,183,194,1)), color-stop(100%, rgba(146,138,151,1)));
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(189,183,194,1) 0%, rgba(146,138,151,1) 100%);
+    background: -o-radial-gradient(center, ellipse cover, rgba(189,183,194,1) 0%, rgba(146,138,151,1) 100%);
+    background: -ms-radial-gradient(center, ellipse cover, rgba(189,183,194,1) 0%, rgba(146,138,151,1) 100%);
+    background: radial-gradient(ellipse at center, rgba(189,183,194,1) 0%, rgba(146,138,151,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bdb7c2', endColorstr='#928a97', GradientType=1 );
 }
 
 #formURL {
@@ -133,7 +135,7 @@ button:disabled {
     margin-left: -15em; 
     border: 5px solid #ccc;
     /*background-color: #769396;*/
-    background-color: #AA8F66;
+    background-color: #283C63;
 }
 
 #loading-image { 
@@ -177,6 +179,14 @@ button:disabled {
 
 #labelCompartir {
     padding-top: 5px;
+}
+
+#compareTitle {
+    text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+
+#cargandoLabel {
+    color: white;
 }
 
 .logo {
