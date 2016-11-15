@@ -60,6 +60,15 @@ function hideResults() {
 	document.getElementById("resultsDiv").style.visibility = "hidden";
 }
 
+function IsJsonString(str) {
+    try {
+        JSON.parse(str);
+    } catch (e) {
+        return false;
+    }
+    return true;
+}
+
 $(document).ready(function(){
 	//fillWithPlaceholders();
 	showLoadingSpinner(false);
@@ -81,7 +90,7 @@ $(document).ready(function(){
 		    'contentType': 'application/json',
 		    success: function (data) {
 		    	//alert(data.a);
-		    	if (data.errorType === undefined) {
+		    	if ((data.errorType === undefined) && (IsJsonString(data))) {
 		    		var players = JSON.parse(data);
 			    	var urlImg;
 			    	for (var i = 0; i < players.length; ++i) {
@@ -105,12 +114,18 @@ $(document).ready(function(){
     			showLoadingSpinner(false);		    		
 		    },
 		    error: function (request, status, error) {
-        		alert(request.responseText);
+        		alert("Error con la petición POST a la API. " +request.responseText);
     		}
 		});
     });
 });
 
+// Binding enter key to send button
+$(document).keypress(function(e){
+    if (e.which == 13){
+        $("#buttonSend").click();
+    }
+});
 
 // Share pop-up.
 // Reference: https://codepen.io/patrickkahl/pen/DxmfG
