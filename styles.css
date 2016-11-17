@@ -2,15 +2,14 @@ body {
 	font-family: 'Cabin', sans-serif;
 	text-align: center;
 	/*background-color: #D3D0CB;*/
-
-background: rgba(251,232,211,1);
-background: -moz-linear-gradient(left, rgba(251,232,211,1) 0%, rgba(227,209,191,1) 100%);
-background: -webkit-gradient(left top, right top, color-stop(0%, rgba(251,232,211,1)), color-stop(100%, rgba(227,209,191,1)));
-background: -webkit-linear-gradient(left, rgba(251,232,211,1) 0%, rgba(227,209,191,1) 100%);
-background: -o-linear-gradient(left, rgba(251,232,211,1) 0%, rgba(227,209,191,1) 100%);
-background: -ms-linear-gradient(left, rgba(251,232,211,1) 0%, rgba(227,209,191,1) 100%);
-background: linear-gradient(to right, rgba(251,232,211,1) 0%, rgba(227,209,191,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbe8d3', endColorstr='#e3d1bf', GradientType=1 );
+    background: rgba(251,232,211,1);
+    background: -moz-linear-gradient(left, rgba(251,232,211,1) 0%, rgba(227,209,191,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(251,232,211,1)), color-stop(100%, rgba(227,209,191,1)));
+    background: -webkit-linear-gradient(left, rgba(251,232,211,1) 0%, rgba(227,209,191,1) 100%);
+    background: -o-linear-gradient(left, rgba(251,232,211,1) 0%, rgba(227,209,191,1) 100%);
+    background: -ms-linear-gradient(left, rgba(251,232,211,1) 0%, rgba(227,209,191,1) 100%);
+    background: linear-gradient(to right, rgba(251,232,211,1) 0%, rgba(227,209,191,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbe8d3', endColorstr='#e3d1bf', GradientType=1 );
 }
 
 header {
